@@ -101,14 +101,14 @@
 		6860130B242141E00035BE56 /* TheMoviesDB */ = {
 			isa = PBXGroup;
 			children = (
+				6860131D242141E20035BE56 /* Info.plist */,
 				6860130C242141E00035BE56 /* AppDelegate.swift */,
 				6860130E242141E00035BE56 /* SceneDelegate.swift */,
-				68601310242141E00035BE56 /* ViewController.swift */,
-				68601312242141E00035BE56 /* Main.storyboard */,
-				68601318242141E20035BE56 /* Assets.xcassets */,
-				6860131A242141E20035BE56 /* LaunchScreen.storyboard */,
-				6860131D242141E20035BE56 /* Info.plist */,
-				68601315242141E00035BE56 /* TheMoviesDB.xcdatamodeld */,
+				68F169D824214358005B3841 /* Presentation */,
+				68F169D924214364005B3841 /* Models */,
+				68F169DA2421436C005B3841 /* Data */,
+				68F169DE24214396005B3841 /* Tools */,
+				68F169DD2421438C005B3841 /* Resources */,
 			);
 			path = TheMoviesDB;
 			sourceTree = "<group>";
@@ -129,6 +129,78 @@
 				68601333242141E20035BE56 /* Info.plist */,
 			);
 			path = TheMoviesDBUITests;
+			sourceTree = "<group>";
+		};
+		68F169D824214358005B3841 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				6860131A242141E20035BE56 /* LaunchScreen.storyboard */,
+				68F169E0242143CA005B3841 /* MainScreen */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		68F169D924214364005B3841 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		68F169DA2421436C005B3841 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				68F169DC2421437E005B3841 /* LocalRepository */,
+				68F169DB24214374005B3841 /* RemoteRepository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		68F169DB24214374005B3841 /* RemoteRepository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RemoteRepository;
+			sourceTree = "<group>";
+		};
+		68F169DC2421437E005B3841 /* LocalRepository */ = {
+			isa = PBXGroup;
+			children = (
+				68601315242141E00035BE56 /* TheMoviesDB.xcdatamodeld */,
+			);
+			path = LocalRepository;
+			sourceTree = "<group>";
+		};
+		68F169DD2421438C005B3841 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				68601318242141E20035BE56 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		68F169DE24214396005B3841 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				68F169DF2421439D005B3841 /* Enums */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		68F169DF2421439D005B3841 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		68F169E0242143CA005B3841 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				68601312242141E00035BE56 /* Main.storyboard */,
+				68601310242141E00035BE56 /* ViewController.swift */,
+			);
+			path = MainScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

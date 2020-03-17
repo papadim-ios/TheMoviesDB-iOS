@@ -11,7 +11,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var coordinator: MainCoordinator?
 
     @available(iOS 13.0, *)
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -19,6 +19,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        // create the main navigation controller to be used
+        let navController = UINavigationController()
+        
+        // send that into our coordinator so that it can display view controllers
+        coordinator = MainCoordinator(navigationController: navController)
+        
+        // tell the coordinator to take over control
+        coordinator?.start()
+        
+        // create a basic UIWindow and activate it
+        window = UIWindow(windowScene: scene as! UIWindowScene)
+        window?.rootViewController = navController
+        window?.makeKeyAndVisible()
     }
 
     @available(iOS 13.0, *)
